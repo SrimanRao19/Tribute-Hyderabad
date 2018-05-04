@@ -1,0 +1,245 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Tribute to Hyderabad</title>
+</head>
+<body>
+  <style>
+   body{
+    background:black;
+  }
+  #map{
+    height:400px;
+    width=100%;
+  }
+  .charminar{
+    border-color:orange;
+    border-width:7px;
+    border-style:solid;
+    border-radius:80%;
+  }
+  .golconda{
+    border-color:white;
+    border-width:7px;
+    border-style:solid;
+    border-radius:80%;
+  }
+  .buddha{
+    border-color:green;
+    border-width:7px;
+    border-style:solid;
+    border-radius:80%;
+  }
+  ::placeholder{
+    color:red;
+  }
+  .history{
+    color:blue;
+  }
+  .text-center{
+    color:orange;
+    font-style:italic;
+  }
+  .prompt{
+    color:red;
+  }
+  .quotes{
+    font-style:cursive;
+    color:blue;
+  }
+  .footer{
+    color:black;
+    background:red;
+  }
+  </style>
+  <div class="container-fluid">
+  <h1 class="text-primary text-center">A Tribute To<em> Hyderabad </em></h1>
+    <h2 class="text-center" style="color:green">The City of Pearls</h2>
+    <div class="row">
+    <figure class="figure">
+    <div class="col-xs-4"><img class="img-responsive charminar" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Tricolor_Charminar.JPG" alt="Charminar" width="400" height="400">    <figcaption class="figure-caption"  style="color:brown"><strong>Charminar covered in Tri-Color</strong></figcaption>
+</div>
+    <div class="col-xs-4"><img class="img-responsive golconda" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Golconda_Fort_005.jpg" alt="Golconda" width="400" height="400"><figcaption class="figure-caption" style="color:pink"><strong>The Golconda Fort on a bright sunny day</strong></figcaption></div>
+    <div class="col-xs-4"><img class="img-responsive buddha" src="https://upload.wikimedia.org/wikipedia/commons/8/86/Buddha_statue_at_Tank_bund.jpg" alt="TankBund" width="400" height="400">    <figcaption class="figure-caption" style="color:green"><strong>The famous buddha statue</strong></figcaption>
+</div>
+    </div>
+  </figure>
+  <h3 class="text-center">History of Hyderabad</h3>
+  <ul class="history" id="history">
+    <li>Established in 1591 by Muhammad Quli Qutb Shah, Hyderabad remained under the rule of the Qutb Shahi dynasty for nearly a century before the Mughals captured the region</li>
+    <li>Hyderabad is the capital of the Indian state of Telangana and de jure capital of Andhra Pradesh.Occupying 650 square kilometres along the banks of the Musi River</li>
+    <li>Hyderabad was historically known as a pearl and diamond trading centre, and it continues to be known as the "City of Pearls".</li>
+    <li>According to John Everett-Heath, the author of Oxford Concise Dictionary of World Place Names, Hyderabad means "Haydar's city" or "lion city"</li>
+    <li>Situated in the southern part of Telangana in southeastern India,[42] Hyderabad is 1,566 kilometres (973 mi) south of Delhi, 699 kilometres (434 mi) southeast of Mumbai, and 570 kilometres (350 mi) north of Bangalore by road.</li>
+  </ul>
+    <br />
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-xs-6" >
+  <div class="well" height="20">
+  <form action="/submit to sriman's database">
+  If you like the city please hit the thumbs up <button class="btn btn-primary" type="button" id="button1"><i class="fa fa-thumbs-up"></i>Like</button>
+  <br />
+  Please rate the city out of 5: <input type="radio" class="rating" id="#rating1" checked="checked" name="Radio1">1</input>
+   <input type="radio" class="rating" id="#rating1" name="Radio1">2</input>
+    <input type="radio" class="rating" id="#rating1" name="Radio1">3</input>
+     <input type="radio" class="rating" id="#rating1" name="Radio1">4</input>
+      <input type="radio" class="rating" id="#rating1" name="Radio1">5</input>
+      <br />
+  Would you like to visit the city/again : <input type="radio" class="question" id="question" checked="checked" name="Radio2">Yes</input>
+  <input type="radio" class="question" id="question" checked="checked" name="Radio2">No</input>
+  <br />
+  What are the different types of food/drinks you liked : <input type="checkbox" class="check" id="check" name="box">Biriyani</input>
+  <input type="checkbox" class="check" id="check" name="box">Haleem</input>
+  <input type="checkbox" class="check" id="check" name="box">Falooda</input>
+  <input type="checkbox" class="check" id="check" name="box">Chai</input>
+  <input type="checkbox" class="check" id="check" name="box">Other: Please mention: <input type="text"class="other" id="otherfood" placeholder=" "></input>
+</input>
+<br />
+<button type="button" class="btn btn-block btn-primary btn-default"><i class="fa fa-paper-plane"></i>Submit</button>
+
+  </div>
+
+  </div>
+
+</div>
+</div>
+</form>
+  <br />
+  <br />
+  <br />
+  <div class="well">
+    <div class="row">
+    <div class="col-xs-4"><img class=img-responsive src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg" alt="Hyderabadi biriyani" width="400" height="300" ></div>
+    <div class="col-xs-4"><img class=img-responsive src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Hallem.jpg" alt="Hyderabadi biriyani" width="400" height="300" ></div>
+    <div class="col-xs-4"><img class=img-responsive src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Irani_chai.jpg" alt="falooda" width="200" height="200" ></div>
+
+
+    </div>
+
+  </div>
+  <div class="well">
+<div class="row">
+  <div class="col-xs-4"><img class=img-responsive src="https://sd.keepcalm-o-matic.co.uk/i/apan-hyderabadi-hai-apne-se-calm-aur-kaam-dono-nai-hota.png" alt="hydpersonality"></div>
+  <div class="quotes">
+    <h4 class="text-center">Quotes about Hyderabad</h4>
+    <ul class="quotes">
+    <li style="font-family:cursive;">"One wants never to give up this crystalline perspective. One wants to keep counterpositioning home with what one knows of alternative realities, as they exist in Tunis or Hyderabad. One wants never to forget that nothing here is normal, that the streets are different in Wisebaden, and Louyang, that this is just one of many possible worlds."
+Author: Alain De Botton</li>
+  <li style="font-family:cursive;">For a day or two Fleury became quite active. He had his book about the advance of civilization in India to consider and this was one reason why he had taken an interest in the behaviour of the Collector. He asked a great number of questions and even bought a notebook to record pertinent information."Why, if the Indian people are happier under our rule," he asked a Treasury official, "do they not emigrate from those native states like Hyderabad which are so dreadfully misgoverned and come and live in British India?""The apathy of the native is well known," replied the official stiffly. "He is not enterprising."Fleury wrote down "apathy" in a flowery hand and then, after a moment's hesitation, added "not enterprising"."
+Author: J.G. Farrell</li>
+<li style="font-family:cursive;">Fill this city of mine with people as,
+You filled the river with fishes O Lord.”
+― Quli Qutub Shah</li>
+
+  </ul>
+</div>
+</div>
+</div>
+<strong class="prompt">If you have time get to know more about this beautiful city</strong><a href="https://en.wikipedia.org/wiki/Hyderabad" target="_blank"> here</a>
+<br />
+<br />
+<br />
+Feedback: <input type="text" class="feedback" id="userfeedback" placeholder="Enter your comments"></input>
+<div class="well">
+  <h1>Hyderabad Map</h1>
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:8,
+        center:{lat:17.4150668,lng:78.490398}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+        addMarker({coords:event.latLng});
+      });
+
+      /*
+      // Add marker
+      var marker = new google.maps.Marker({
+        position:{lat:42.4668,lng:-70.9495},
+        map:map,
+        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:'<h1>Lynn MA</h1>'
+      });
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+      });
+      */
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:17.4150668,lng:78.490398},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h1>Lynn MA</h1>'
+        },
+        {
+          coords:{lat:17.4150668,lng:78.490398},
+          content:'<h1>Amesbury MA</h1>'
+        },
+        {
+          coords:{lat:17.4150668,lng:78.490398}
+        }
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGQoTnZHmj0rf0GTNwdp2-GuKMiLLB8A&callback=initMap">
+    </script>
+</div>
+<div class="well">
+  <h4>Are you a Sunrisers Hyderabad fan? Click the IPL button to check out the live scores of SRH and all the other teams <button type=button class="btn btn-default brn-primary">IPL</button></h4>
+</div>
+<div class="footer text-center">
+  "A project by Sriman Rao as a tribute to Hyderabad"
+</div>
+  </div>
+</body>
+</html>
